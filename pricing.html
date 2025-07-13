@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing – MeetingROI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    .navbar, footer {
+      background: #fff; padding: 15px 30px;
+      display: flex; justify-content: space-between;
+      align-items: center; border-bottom: 1px solid #ddd;
+    }
+    .nav-links a, footer a {
+      margin-left: 15px; text-decoration: none; color: #007BFF;
+    }
+    .nav-links a:hover, footer a:hover { text-decoration: underline; }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .pricing-table {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .plan {
+      flex: 1 1 280px;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .plan h2 {
+      font-size: 24px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+    .plan p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    .btn {
+      background: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .navbar, footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .pricing-table {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>MeetingROI</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="section">
+    <h2 style="text-align:center; color:#007BFF;">Choose Your Plan</h2>
+    <p style="text-align:center;">Start for free. Upgrade when you're ready.</p>
+
+    <div class="pricing-table">
+      <!-- Free Plan -->
+      <div class="plan">
+        <h2>Free</h2>
+        <p>Get started with basic analytics</p>
+        <p class="price">$0 / month</p>
+        <p>✔ Basic meeting insights</p>
+        <p>✔ Limited storage</p>
+        <p>✔ Community support</p>
+        <a href="#" class="btn">Start Free</a>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="plan">
+        <h2>Pro</h2>
+        <p>Advanced features for individuals</p>
+        <p class="price">$9 / month</p>
+        <p>✔ Real-time cost analysis</p>
+        <p>✔ Productivity predictions</p>
+        <p>✔ Exportable reports</p>
+        <a href="#" class="btn">Subscribe Now</a>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="plan">
+        <h2>Enterprise</h2>
+        <p>Custom solutions for organizations</p>
+        <p class="price">Contact Us</p>
+        <p>✔ All Pro features</p>
+        <p>✔ API access & integrations</p>
+        <p>✔ Custom dashboards & SLAs</p>
+        <a href="mailto:contact@meetingroi.com" class="btn">Request Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MeetingROI. All rights reserved.</p>
+    <div>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
